@@ -1,19 +1,18 @@
 import React from 'react';
 import './App.scss';
+import Maintenance from './Maintenance';
 
 function App() {
 
-  setTitle("Home");
+  setTitle("Maintenance (Home)");
 
   return (
-    <div className="App">
-      
-    </div>
+    <Maintenance/>
   );
 }
 
 export function setTitle(title: string){
-  document.title = `Beserra - ${title}`;
+  document.title = `Felipe - ${title}`;
 }
 
 export default App;
