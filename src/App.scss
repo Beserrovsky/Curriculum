@@ -1,0 +1,9 @@
+/* bootstrap theming */
+$theme-colors: (
+    "info": pink,
+    "danger": teal
+);
+
+// Custom components
+
+@import '../node_modules/bootstrap/scss/bootstrap';
