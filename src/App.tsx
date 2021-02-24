@@ -6,7 +6,7 @@ import Maintenance from './Maintenance';
 
 function App() {
 
-  const maintenance = true; // TRUE FOR MAINTENANCE SCREEN
+  const maintenance = false; // TRUE FOR MAINTENANCE SCREEN
   if(maintenance){
     return Maintenance();
   }
@@ -17,6 +17,7 @@ function App() {
     <div className="App">
       <Header/>
       <Footer/>
+      <div className="debuger-size"/> {/* REMOVE */}
     </div>
   );
 }

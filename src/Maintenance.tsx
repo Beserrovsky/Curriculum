@@ -9,7 +9,7 @@ export default function Maintenance() {
   setTitle('Maintenance');
 
   return (
-    <div className="Maintenance bg-danger">
+    <div className="Maintenance bg-warning">
       <Jumbotron className="bg-light px-5 shadow">
         <h1>Página em manutenção!</h1>
         <Music/>
