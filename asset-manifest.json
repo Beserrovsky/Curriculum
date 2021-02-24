@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-curriculum/static/css/main.554d67d9.chunk.css",
-    "main.js": "/react-curriculum/static/js/main.88b73c56.chunk.js",
-    "main.js.map": "/react-curriculum/static/js/main.88b73c56.chunk.js.map",
+    "main.css": "/react-curriculum/static/css/main.0a253ecd.chunk.css",
+    "main.js": "/react-curriculum/static/js/main.fcc3b6cf.chunk.js",
+    "main.js.map": "/react-curriculum/static/js/main.fcc3b6cf.chunk.js.map",
     "runtime-main.js": "/react-curriculum/static/js/runtime-main.b6c991fa.js",
     "runtime-main.js.map": "/react-curriculum/static/js/runtime-main.b6c991fa.js.map",
-    "static/js/2.6975c017.chunk.js": "/react-curriculum/static/js/2.6975c017.chunk.js",
-    "static/js/2.6975c017.chunk.js.map": "/react-curriculum/static/js/2.6975c017.chunk.js.map",
+    "static/js/2.ba25e924.chunk.js": "/react-curriculum/static/js/2.ba25e924.chunk.js",
+    "static/js/2.ba25e924.chunk.js.map": "/react-curriculum/static/js/2.ba25e924.chunk.js.map",
     "index.html": "/react-curriculum/index.html",
-    "static/css/main.554d67d9.chunk.css.map": "/react-curriculum/static/css/main.554d67d9.chunk.css.map",
-    "static/js/2.6975c017.chunk.js.LICENSE.txt": "/react-curriculum/static/js/2.6975c017.chunk.js.LICENSE.txt",
+    "static/css/main.0a253ecd.chunk.css.map": "/react-curriculum/static/css/main.0a253ecd.chunk.css.map",
+    "static/js/2.ba25e924.chunk.js.LICENSE.txt": "/react-curriculum/static/js/2.ba25e924.chunk.js.LICENSE.txt",
     "static/media/hit.05f7d37d.mp3": "/react-curriculum/static/media/hit.05f7d37d.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.b6c991fa.js",
-    "static/js/2.6975c017.chunk.js",
-    "static/css/main.554d67d9.chunk.css",
-    "static/js/main.88b73c56.chunk.js"
+    "static/js/2.ba25e924.chunk.js",
+    "static/css/main.0a253ecd.chunk.css",
+    "static/js/main.fcc3b6cf.chunk.js"
   ]
 }
