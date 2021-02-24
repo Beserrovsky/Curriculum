@@ -3,6 +3,11 @@ $theme-colors: (
     "danger": rgb(245, 208, 0)
 );
 
+.btn-link{
+    background-color: transparent;
+    border: 0;
+}
+
 // Custom components
 
 .Maintenance{

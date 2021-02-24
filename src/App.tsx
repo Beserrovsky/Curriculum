@@ -1,29 +1,24 @@
 import React from 'react';
 import './App.scss';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import Maintenance from './Maintenance';
 
 function App() {
 
   const maintenance = true; // TRUE FOR MAINTENANCE SCREEN
-
   if(maintenance){
-
-    setTitle("Maintenance (Home)");
-
-    return (
-      <Maintenance/>
-    ); 
-
-  }else{
-
-    setTitle("Home");
-
-    return (
-      <div className="App">
-  
-      </div>
-    );
+    return Maintenance();
   }
+
+  setTitle("Home");
+
+  return (
+    <div className="App">
+      <Header/>
+      <Footer/>
+    </div>
+  );
 }
 
 export function setTitle(title: string){
