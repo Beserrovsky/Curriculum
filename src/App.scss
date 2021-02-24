@@ -13,4 +13,8 @@ $theme-colors: (
     align-items: center;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 @import '../node_modules/bootstrap/scss/bootstrap';

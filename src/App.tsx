@@ -4,11 +4,26 @@ import Maintenance from './Maintenance';
 
 function App() {
 
-  setTitle("Maintenance (Home)");
+  const maintenance = true; // TRUE FOR MAINTENANCE SCREEN
 
-  return (
-    <Maintenance/>
-  );
+  if(maintenance){
+
+    setTitle("Maintenance (Home)");
+
+    return (
+      <Maintenance/>
+    ); 
+
+  }else{
+
+    setTitle("Home");
+
+    return (
+      <div className="App">
+  
+      </div>
+    );
+  }
 }
 
 export function setTitle(title: string){
