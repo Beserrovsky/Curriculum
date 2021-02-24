@@ -1,6 +1,6 @@
 {
-  "homepage": "http://beserrovsky.github.io/curriculum",
-  "name": "curriculum-react",
+  "homepage": "http://beserrovsky.github.io/react-curriculum",
+  "name": "react-curriculum",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
