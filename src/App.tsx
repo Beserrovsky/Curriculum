@@ -12,6 +12,9 @@ function App() {
     return Maintenance();
   }
 
+  const scroll_debug = false; // TRUE FOR CONSOLE LOGGING SCROLL
+  scroll_debug && scrollDebuger();
+
   setTitle("Home");
 
   return (
@@ -22,6 +25,10 @@ function App() {
       <Footer/>
     </div>
   );
+}
+
+function scrollDebuger(){
+  document.addEventListener('scroll', ()=>{console.log(window.scrollY)});
 }
 
 export function setTitle(title: string){

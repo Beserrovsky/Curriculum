@@ -123,15 +123,27 @@ $desktop-width: 1024px;
 
 .Home{
     .content-index{
-        width: 20%;
+        width: 225px;
         position: fixed;
         right:20px;
 
         .index-body{
-            display: none;
+            height: 0px;
+            transition: height 0.5s;
+
+            *{
+                display: none;
+            }
 
             &.active{
-                display: initial;
+                height: 150px;
+                *{
+                    display: initial;
+                }
+                li{
+                    display: list-item;
+                    margin-left: 1.5rem;
+                }
             }
         }
     }
