@@ -28,6 +28,7 @@ Este projeto faz uso das seguintes patentes e tecnologias:
 - [Bootstrap](https://getbootstrap.com/)
 - [React-Bootstrap](https://react-bootstrap.github.io/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Node-Sass](https://www.npmjs.com/package/node-sass)
 
 #### Mídias
 

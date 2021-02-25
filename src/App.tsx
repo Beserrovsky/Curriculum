@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Home from './Home';
 import Maintenance from './Maintenance';
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Footer/>
+      <Home/>
       <div className="debuger-size"/> {/* REMOVE */}
+      <Footer/>
     </div>
   );
 }

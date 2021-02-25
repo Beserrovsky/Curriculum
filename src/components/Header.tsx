@@ -27,7 +27,7 @@ export default function Header() {
         <div className="d-flex justify-content-between">
           {my_media.map((answer) => {        
               return (<div className="SocialMedia">
-                <a className="mx-2" title={"@" + answer.username} href={answer.url}>{answer.icon_normal}</a>
+                <a className="mx-2" title={"@" + answer.username} href={answer.url}><i className={answer.icon}></i></a>
               </div>); 
             })}
         </div>
@@ -39,9 +39,6 @@ export default function Header() {
       <div className="fixed-profile">
         <img src={pfp} alt="Minha foto" title="Eu ai ;)"/>
         <button className={`btn btn-dark back ${Scrolled? 'active':''}`} onClick={gotoTop}>Voltar ao topo</button>
-      </div>
-      <div className="cookie active">
-        <p className="my-auto"><a href="https://github.com/Beserrovsky/react-curriculum/blob/main/README.md#cookies" title="Não falamos sobre cookies aqui ❌">&#127850;</a></p>
       </div>
     </div>
   )

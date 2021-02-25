@@ -28,6 +28,7 @@ I use the following trademarks and technologies in my project:
 - [Bootstrap](https://getbootstrap.com/)
 - [React-Bootstrap](https://react-bootstrap.github.io/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Node-Sass](https://www.npmjs.com/package/node-sass)
 
 #### Media
 

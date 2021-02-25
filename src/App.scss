@@ -1,6 +1,6 @@
-/* bootstrap theming */
-$theme-colors: (
-);
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'; // Icons import
+
+// General
 
 html{
     scroll-behavior: smooth;
@@ -42,11 +42,13 @@ $desktop-width: 1024px;
     animation: fadein 1s;
     display: initial;
     opacity: 1;
+    z-index: -1;
 }
 
 @mixin off {
-    display: initial;
+    display: none;
     opacity: 0;
+    z-index: -1;
 }
 
 @keyframes fadein{
@@ -88,6 +90,10 @@ $desktop-width: 1024px;
         }
     }
 
+    i{
+        font-size: 1.25rem;
+    }
+
     .fixed-profile{
         position: fixed;
         top: $sm-top-margin;
@@ -110,21 +116,23 @@ $desktop-width: 1024px;
             @include off()
         }
         .back.active{
-            z-index: -1;
             @include on()
         }
     }
+}
 
-    .cookie{
-        position: absolute;
-        right: $sm-left-margin;
-        top: 65px;
-        width: 34px;
-        height: 34px;
-        background-color: map-get($theme-colors, 'dark');
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.Home{
+    .content-index{
+        width: 20%;
+        position: fixed;
+        right:20px;
+
+        .index-body{
+            display: none;
+
+            &.active{
+                display: initial;
+            }
+        }
     }
 }
