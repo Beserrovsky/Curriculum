@@ -9,7 +9,6 @@ export default function Header() {
 
   function gotoTop(){
     window.scrollTo(0, 0);
-    setScrolled(false);
   }
 
   document.addEventListener('scroll', ()=>{
@@ -40,6 +39,9 @@ export default function Header() {
       <div className="fixed-profile">
         <img src={pfp} alt="Minha foto" title="Eu ai ;)"/>
         <button className={`btn btn-dark back ${Scrolled? 'active':''}`} onClick={gotoTop}>Voltar ao topo</button>
+      </div>
+      <div className="cookie active">
+        <p className="my-auto"><a href="https://github.com/Beserrovsky/react-curriculum/blob/main/README.md#cookies" title="Não falamos sobre cookies aqui ❌">&#127850;</a></p>
       </div>
     </div>
   )

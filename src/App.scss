@@ -2,7 +2,7 @@
 $theme-colors: (
 );
 
-body{
+html{
     scroll-behavior: smooth;
 }
 
@@ -38,17 +38,29 @@ $desktop-width: 1024px;
   }
 }
 
-@mixin fadeOut {
-    transform: translateX(-100px);
-    transition: transform 1s, opacity 0.75s;
+@mixin on {
+    animation: fadein 1s;
+    display: initial;
+    opacity: 1;
+}
+
+@mixin off {
+    display: initial;
     opacity: 0;
 }
 
-@mixin fadeIn {
-    transform: translateX(-0px);
-    transition: transform 1s, opacity 0.75s;
-    opacity: 1;
+@keyframes fadein{
+    0%{
+        display: initial;
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
+
 
 // Custom components
 
@@ -75,12 +87,12 @@ $desktop-width: 1024px;
             margin-left: $left-margin + $width + 10px;
         }
     }
+
     .fixed-profile{
         position: fixed;
         top: $sm-top-margin;
         left: $sm-left-margin;
         @include desktop(){
-            top: $left-margin;
             left: $left-margin;
         }
         img{
@@ -95,11 +107,24 @@ $desktop-width: 1024px;
         }
         .back{
             margin-left: 5px;
-            @include fadeOut()
+            @include off()
         }
         .back.active{
             z-index: -1;
-            @include fadeIn()
+            @include on()
         }
+    }
+
+    .cookie{
+        position: absolute;
+        right: $sm-left-margin;
+        top: 65px;
+        width: 34px;
+        height: 34px;
+        background-color: map-get($theme-colors, 'dark');
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
