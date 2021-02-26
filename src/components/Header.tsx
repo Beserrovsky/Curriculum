@@ -33,7 +33,7 @@ export default function Header() {
         </div>
       </div>
       <div className="name">
-        <h3>Felipe Beserra de Oliveira</h3>
+        <h3 className="title">Felipe Beserra de Oliveira</h3>
         <hr/>
       </div>
       <div className="fixed-profile">

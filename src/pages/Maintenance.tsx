@@ -1,8 +1,8 @@
 import React from 'react'
 import { Jumbotron } from 'react-bootstrap';
-import { setTitle } from './App';
+import { setTitle } from '../App';
 
-import Music from './components/Music';
+import Music from '../components/Music';
 
 export default function Maintenance() {
 

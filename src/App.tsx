@@ -2,8 +2,8 @@ import React from 'react';
 import './App.scss';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Home from './Home';
-import Maintenance from './Maintenance';
+import Home from './pages/Home';
+import Maintenance from './pages/Maintenance';
 
 function App() {
 

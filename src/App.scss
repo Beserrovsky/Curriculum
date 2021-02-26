@@ -1,4 +1,11 @@
+@import './Mixins.scss'; // Mixins import
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'; // Icons import
+
+// Bootstrap theming
+
+
+@import '../node_modules/bootstrap/scss/bootstrap'; // Bootstrap import
+
 
 // General
 
@@ -19,52 +26,47 @@ html{
     border: 0;
 }
 
-@import '../node_modules/bootstrap/scss/bootstrap';
+.title{
+    font-size: 1.2rem;
 
-// Mixins
-
-$tablet-width: 768px;
-$desktop-width: 1024px;
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
-@mixin on {
-    animation: fadein 1s;
-    display: initial;
-    opacity: 1;
-    z-index: -1;
-}
-
-@mixin off {
-    display: none;
-    opacity: 0;
-    z-index: -1;
-}
-
-@keyframes fadein{
-    0%{
-        display: initial;
-        opacity: 0;
-        transform: translateX(-100px);
+    @include media-breakpoint-up(md){
+        font-size: 1.5rem;
     }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
+
+    @include media-breakpoint-up(lg){
+        font-size: 2rem;    
     }
+
 }
 
+.subtitle{
+    font-size: 1rem;
 
-// Custom components
+    @include media-breakpoint-up(md){
+        font-size: 1.3rem;
+    }
+
+    @include media-breakpoint-up(lg){
+        font-size: 1.8rem;    
+    }
+
+}
+
+.subicon{
+    font-size: 0.8rem;
+
+    @include media-breakpoint-up(md){
+        font-size: 0.9rem;
+    }
+
+    @include media-breakpoint-up(lg){
+        font-size: 1rem;    
+    }
+
+}
+
+// Components
+
 
 .Maintenance{
     display: flex;
@@ -85,7 +87,7 @@ $desktop-width: 1024px;
     .name{
         margin-left: $sm-left-margin + $sm-width + 5px;
         margin-top: 5px;
-        @include desktop(){
+        @include media-breakpoint-up(lg){
             margin-left: $left-margin + $width + 10px;
         }
     }
@@ -98,6 +100,7 @@ $desktop-width: 1024px;
         position: fixed;
         top: $sm-top-margin;
         left: $sm-left-margin;
+        z-index: 99;
         @include desktop(){
             left: $left-margin;
         }
@@ -121,29 +124,27 @@ $desktop-width: 1024px;
     }
 }
 
-.Home{
-    .content-index{
-        width: 225px;
-        position: fixed;
-        right:20px;
+.content-index{
+    position: fixed;
+    right:20px;
+    top: 25vh;
+    z-index: 99;
 
-        .index-body{
-            height: 0px;
-            transition: height 0.5s;
+    .index-body{
+        height: 0px;
+        transition: height 0.5s;
 
+        *{
+            display: none;
+        }
+
+        &.active{
+            height: 150px;
             *{
-                display: none;
+                display: initial;
             }
-
-            &.active{
-                height: 150px;
-                *{
-                    display: initial;
-                }
-                li{
-                    display: list-item;
-                    margin-left: 1.5rem;
-                }
+            li{
+                display: list-item;
             }
         }
     }
